@@ -28,3 +28,12 @@ Here, we run a variational algorithm to estimate the energy of a molecule underg
 ### Ionization potentials
 
 In this tutorial, we use a variational algorithm to estimate the ionization energy of an ammonia molecule at equilibrium geometry. Doing so, we perform two single-point energy calculations, one for the neutral and one for the ionized states, where for the latter an open-shell doublet spin state is required. This gives us the ionization energy as the energy difference between the cation and neutral species.
+
+## qBraid Instructions
+
+After launching on qBraid, run the following in the terminal to register the license:
+
+```bash
+ENV_PATH=$(qbraid envs list | grep "Kvantify Qrunch" | awk '{print $NF}')
+"$ENV_PATH/pyenv/bin/qrunch.license" add "$ENV_PATH/license.txt" --overwrite
+```
