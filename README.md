@@ -5,6 +5,8 @@ This is the official repository for the [Kvantify Qrunch](https://www.kvantify.c
 
 _**Get [Qrunch Basic](https://www.kvantify.com/products/qrunch/pricing/register) for free!**_
 
+[<img src="https://qbraid-static.s3.amazonaws.com/logos/Launch_on_qBraid_white.png" width="150">](https://account.qbraid.com/explore/projects/kvantify-qrunch-tutorials)
+
 ### Butyronitrile dissociation
 <img width="355" height="200" alt="Butyronitrile" src="https://github.com/user-attachments/assets/89a734ce-65f3-48d6-9447-c723c1cc7bef" />
 
