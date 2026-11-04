@@ -1,0 +1,831 @@
+{
+  "charge": 0,
+  "spin": 0,
+  "basis_set": "6-31+g",
+  "embedded_atom_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    20,
+    24,
+    25,
+    27,
+    28
+  ],
+  "cas": {
+    "number_of_active_spatial_orbitals": 16,
+    "number_of_active_alpha_electrons": 5
+  },
+  "simulator": "memory_restricted",
+  "number_of_shots": 1000,
+  "number_of_iterations": 20,
+  "geometry_indices": [
+    0,
+    2,
+    4,
+    6,
+    9,
+    16
+  ],
+  "timings_seconds": {
+    "Problem build (embedding & active space)": 1.31,
+    "Problem build (embedding & active space) / OrbitalAssigner.assign": 0.44,
+    "BEAST VQE": 9.52,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate": 8.86,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / JordanWignerMapper.map": 0.0,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / ReducedDensityMatrixCalculator.calculate": 0.04,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / ReducedDensityMatrixCalculator.calculate / Estimator.run": 0.04,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration": 8.79,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / GateSelector.select_gates": 0.07,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / GateSelector.select_gates / Sampler.run": 0.05,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / GateSelector.select_gates / calculating importance metrics u64": 0.02,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / BasicVqeAlgorithm.run": 3.8,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / BasicVqeAlgorithm.run / Estimator.run": 2.56,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / ReducedDensityMatrixCalculator.calculate": 0.23,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / ReducedDensityMatrixCalculator.calculate / Estimator.run": 0.16,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / rotating operators": 0.76,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / GradientCalculator.compute_gradient": 0.8,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / GradientCalculator.compute_gradient / ReducedDensityMatrixCalculator.calculate": 0.72,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / GradientCalculator.compute_gradient / ReducedDensityMatrixCalculator.calculate / Estimator.run": 0.48,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / GradientCalculator.compute_energy": 0.75,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / GradientCalculator.compute_energy / ReducedDensityMatrixCalculator.calculate": 0.71,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / GradientCalculator.compute_energy / ReducedDensityMatrixCalculator.calculate / Estimator.run": 0.47,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / GradientCalculator.compute_hessian": 1.8,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / GradientCalculator.compute_hessian / ReducedDensityMatrixCalculator.calculate": 0.15,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / GradientCalculator.compute_hessian / ReducedDensityMatrixCalculator.calculate / Estimator.run": 0.1,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate / OrbitalOptimizationVqe.iteration / JordanWignerMapper.map": 0.03,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate.second_order_correction": 0.65,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate.second_order_correction / Estimator.run": 0.0,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate.second_order_correction / BEAST-PT2 expectation values": 0.58,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate.second_order_correction / BEAST-PT2 expectation values / Estimator.run": 0.53,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate.second_order_correction / BEAST-PT2 batched Y + G contraction": 0.06,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate.second_order_correction / BEAST-PT2 batched Y + G contraction / Y vector evaluation": 0.01,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate.second_order_correction / BEAST-PT2 batched Y + G contraction / ZZZZZ expectation values": 0.05,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate.second_order_correction / BEAST-PT2 batched Y + G contraction / ZZZZZ expectation values / Estimator.run": 0.02,
+    "BEAST VQE / BeastVqeGroundStateCalculator.calculate.second_order_correction / BEAST-PT2 batched Y + G contraction / Fused G diagonal contraction": 0.0
+  },
+  "total_energy_per_geometry": [
+    {
+      "value": -1019.7449144678715,
+      "error": 0.0
+    },
+    {
+      "value": -1019.7511801067094,
+      "error": 0.0
+    },
+    {
+      "value": -1019.7505545546092,
+      "error": 0.0
+    },
+    {
+      "value": -1019.7499969205071,
+      "error": 0.0
+    },
+    {
+      "value": -1019.7495981605016,
+      "error": 0.0
+    },
+    {
+      "value": -1019.7495259726768,
+      "error": 0.0
+    }
+  ],
+  "nuclear_repulsion_per_geometry": [
+    {
+      "value": 1817.59410930417,
+      "error": 0.0
+    },
+    {
+      "value": 1719.9101695341396,
+      "error": 0.0
+    },
+    {
+      "value": 1645.269660213854,
+      "error": 0.0
+    },
+    {
+      "value": 1586.892590691624,
+      "error": 0.0
+    },
+    {
+      "value": 1520.3596448395042,
+      "error": 0.0
+    },
+    {
+      "value": 1422.2553311625322,
+      "error": 0.0
+    }
+  ],
+  "non_active_electrons_per_geometry": [
+    {
+      "value": -2825.1489827397845,
+      "error": 0.0
+    },
+    {
+      "value": -2727.887672813753,
+      "error": 0.0
+    },
+    {
+      "value": -2653.5654187768578,
+      "error": 0.0
+    },
+    {
+      "value": -2595.43367454304,
+      "error": 0.0
+    },
+    {
+      "value": -2529.176442315092,
+      "error": 0.0
+    },
+    {
+      "value": -2431.472793398336,
+      "error": 0.0
+    }
+  ],
+  "electronic_energy_per_iteration_per_geometry": [
+    [
+      {
+        "iteration": 0,
+        "value": -2837.2509878309565,
+        "error": 0.0
+      },
+      {
+        "iteration": 1,
+        "value": -2837.264196937093,
+        "error": 0.0
+      },
+      {
+        "iteration": 2,
+        "value": -2837.275847278307,
+        "error": 0.0
+      },
+      {
+        "iteration": 3,
+        "value": -2837.2893474007983,
+        "error": 0.0
+      },
+      {
+        "iteration": 4,
+        "value": -2837.299832893024,
+        "error": 0.0
+      },
+      {
+        "iteration": 5,
+        "value": -2837.3146046438164,
+        "error": 0.0
+      },
+      {
+        "iteration": 6,
+        "value": -2837.3220240798446,
+        "error": 0.0
+      },
+      {
+        "iteration": 7,
+        "value": -2837.3234987245964,
+        "error": 0.0
+      },
+      {
+        "iteration": 8,
+        "value": -2837.323982594456,
+        "error": 0.0
+      },
+      {
+        "iteration": 9,
+        "value": -2837.324222558165,
+        "error": 0.0
+      },
+      {
+        "iteration": 10,
+        "value": -2837.3379255750974,
+        "error": 0.0
+      },
+      {
+        "iteration": 11,
+        "value": -2837.338081714502,
+        "error": 0.0
+      },
+      {
+        "iteration": 12,
+        "value": -2837.33815573327,
+        "error": 0.0
+      },
+      {
+        "iteration": 13,
+        "value": -2837.338188343492,
+        "error": 0.0
+      },
+      {
+        "iteration": 14,
+        "value": -2837.338211271688,
+        "error": 0.0
+      },
+      {
+        "iteration": 15,
+        "value": -2837.3382317557944,
+        "error": 0.0
+      },
+      {
+        "iteration": 16,
+        "value": -2837.338243974629,
+        "error": 0.0
+      },
+      {
+        "iteration": 17,
+        "value": -2837.3382570344193,
+        "error": 0.0
+      },
+      {
+        "iteration": 18,
+        "value": -2837.3382684209064,
+        "error": 0.0
+      },
+      {
+        "iteration": 19,
+        "value": -2837.3382763868904,
+        "error": 0.0
+      },
+      {
+        "iteration": 20,
+        "value": -2837.3382999896485,
+        "error": 0.0
+      },
+      {
+        "iteration": 21,
+        "value": -2837.3390237720414,
+        "error": 0.0
+      }
+    ],
+    [
+      {
+        "iteration": 0,
+        "value": -2739.5733402765695,
+        "error": 0.0
+      },
+      {
+        "iteration": 1,
+        "value": -2739.5838866439813,
+        "error": 0.0
+      },
+      {
+        "iteration": 2,
+        "value": -2739.590560414043,
+        "error": 0.0
+      },
+      {
+        "iteration": 3,
+        "value": -2739.613079762194,
+        "error": 0.0
+      },
+      {
+        "iteration": 4,
+        "value": -2739.622519688016,
+        "error": 0.0
+      },
+      {
+        "iteration": 5,
+        "value": -2739.6379844299513,
+        "error": 0.0
+      },
+      {
+        "iteration": 6,
+        "value": -2739.63999517881,
+        "error": 0.0
+      },
+      {
+        "iteration": 7,
+        "value": -2739.6410224222336,
+        "error": 0.0
+      },
+      {
+        "iteration": 8,
+        "value": -2739.6413701765127,
+        "error": 0.0
+      },
+      {
+        "iteration": 9,
+        "value": -2739.6415861964615,
+        "error": 0.0
+      },
+      {
+        "iteration": 10,
+        "value": -2739.6601791218413,
+        "error": 0.0
+      },
+      {
+        "iteration": 11,
+        "value": -2739.660397990409,
+        "error": 0.0
+      },
+      {
+        "iteration": 12,
+        "value": -2739.6604787045744,
+        "error": 0.0
+      },
+      {
+        "iteration": 13,
+        "value": -2739.6605107836717,
+        "error": 0.0
+      },
+      {
+        "iteration": 14,
+        "value": -2739.6605327604393,
+        "error": 0.0
+      },
+      {
+        "iteration": 15,
+        "value": -2739.660553827636,
+        "error": 0.0
+      },
+      {
+        "iteration": 16,
+        "value": -2739.660565028581,
+        "error": 0.0
+      },
+      {
+        "iteration": 17,
+        "value": -2739.6605769591233,
+        "error": 0.0
+      },
+      {
+        "iteration": 18,
+        "value": -2739.6605888315685,
+        "error": 0.0
+      },
+      {
+        "iteration": 19,
+        "value": -2739.6605961478713,
+        "error": 0.0
+      },
+      {
+        "iteration": 20,
+        "value": -2739.660612104802,
+        "error": 0.0
+      },
+      {
+        "iteration": 21,
+        "value": -2739.661349640849,
+        "error": 0.0
+      }
+    ],
+    [
+      {
+        "iteration": 0,
+        "value": -2664.932791163655,
+        "error": 0.0
+      },
+      {
+        "iteration": 1,
+        "value": -2664.943484499079,
+        "error": 0.0
+      },
+      {
+        "iteration": 2,
+        "value": -2664.950189030684,
+        "error": 0.0
+      },
+      {
+        "iteration": 3,
+        "value": -2664.972919821493,
+        "error": 0.0
+      },
+      {
+        "iteration": 4,
+        "value": -2664.9822730040833,
+        "error": 0.0
+      },
+      {
+        "iteration": 5,
+        "value": -2664.9979582729093,
+        "error": 0.0
+      },
+      {
+        "iteration": 6,
+        "value": -2664.9989585898666,
+        "error": 0.0
+      },
+      {
+        "iteration": 7,
+        "value": -2665.0002165158253,
+        "error": 0.0
+      },
+      {
+        "iteration": 8,
+        "value": -2665.0006952009558,
+        "error": 0.0
+      },
+      {
+        "iteration": 9,
+        "value": -2665.000915826821,
+        "error": 0.0
+      },
+      {
+        "iteration": 10,
+        "value": -2665.0190494568624,
+        "error": 0.0
+      },
+      {
+        "iteration": 11,
+        "value": -2665.019255244571,
+        "error": 0.0
+      },
+      {
+        "iteration": 12,
+        "value": -2665.0193379447355,
+        "error": 0.0
+      },
+      {
+        "iteration": 13,
+        "value": -2665.0193695045195,
+        "error": 0.0
+      },
+      {
+        "iteration": 14,
+        "value": -2665.0193916557896,
+        "error": 0.0
+      },
+      {
+        "iteration": 15,
+        "value": -2665.019412604761,
+        "error": 0.0
+      },
+      {
+        "iteration": 16,
+        "value": -2665.019424173636,
+        "error": 0.0
+      },
+      {
+        "iteration": 17,
+        "value": -2665.019436298606,
+        "error": 0.0
+      },
+      {
+        "iteration": 18,
+        "value": -2665.0194376270993,
+        "error": 0.0
+      },
+      {
+        "iteration": 19,
+        "value": -2665.0194487435024,
+        "error": 0.0
+      },
+      {
+        "iteration": 20,
+        "value": -2665.019469728001,
+        "error": 0.0
+      },
+      {
+        "iteration": 21,
+        "value": -2665.020214768463,
+        "error": 0.0
+      }
+    ],
+    [
+      {
+        "iteration": 0,
+        "value": -2606.5555958595965,
+        "error": 0.0
+      },
+      {
+        "iteration": 1,
+        "value": -2606.56636054754,
+        "error": 0.0
+      },
+      {
+        "iteration": 2,
+        "value": -2606.5730581410367,
+        "error": 0.0
+      },
+      {
+        "iteration": 3,
+        "value": -2606.5961308914716,
+        "error": 0.0
+      },
+      {
+        "iteration": 4,
+        "value": -2606.6052430784353,
+        "error": 0.0
+      },
+      {
+        "iteration": 5,
+        "value": -2606.6194360434065,
+        "error": 0.0
+      },
+      {
+        "iteration": 6,
+        "value": -2606.621315091871,
+        "error": 0.0
+      },
+      {
+        "iteration": 7,
+        "value": -2606.6228000235155,
+        "error": 0.0
+      },
+      {
+        "iteration": 8,
+        "value": -2606.623278540288,
+        "error": 0.0
+      },
+      {
+        "iteration": 9,
+        "value": -2606.6234816728074,
+        "error": 0.0
+      },
+      {
+        "iteration": 10,
+        "value": -2606.6413613402883,
+        "error": 0.0
+      },
+      {
+        "iteration": 11,
+        "value": -2606.64159343031,
+        "error": 0.0
+      },
+      {
+        "iteration": 12,
+        "value": -2606.6416923903835,
+        "error": 0.0
+      },
+      {
+        "iteration": 13,
+        "value": -2606.641721468397,
+        "error": 0.0
+      },
+      {
+        "iteration": 14,
+        "value": -2606.641750242248,
+        "error": 0.0
+      },
+      {
+        "iteration": 15,
+        "value": -2606.6417678604407,
+        "error": 0.0
+      },
+      {
+        "iteration": 16,
+        "value": -2606.6417787276255,
+        "error": 0.0
+      },
+      {
+        "iteration": 17,
+        "value": -2606.6417909404054,
+        "error": 0.0
+      },
+      {
+        "iteration": 18,
+        "value": -2606.6417926967893,
+        "error": 0.0
+      },
+      {
+        "iteration": 19,
+        "value": -2606.6418034569756,
+        "error": 0.0
+      },
+      {
+        "iteration": 20,
+        "value": -2606.64182308535,
+        "error": 0.0
+      },
+      {
+        "iteration": 21,
+        "value": -2606.642587612131,
+        "error": 0.0
+      }
+    ],
+    [
+      {
+        "iteration": 0,
+        "value": -2540.022647749592,
+        "error": 0.0
+      },
+      {
+        "iteration": 1,
+        "value": -2540.0334774926046,
+        "error": 0.0
+      },
+      {
+        "iteration": 2,
+        "value": -2540.0487266790615,
+        "error": 0.0
+      },
+      {
+        "iteration": 3,
+        "value": -2540.0691340047606,
+        "error": 0.0
+      },
+      {
+        "iteration": 4,
+        "value": -2540.0780635097894,
+        "error": 0.0
+      },
+      {
+        "iteration": 5,
+        "value": -2540.0907876213364,
+        "error": 0.0
+      },
+      {
+        "iteration": 6,
+        "value": -2540.093558040266,
+        "error": 0.0
+      },
+      {
+        "iteration": 7,
+        "value": -2540.094062432763,
+        "error": 0.0
+      },
+      {
+        "iteration": 8,
+        "value": -2540.094377518471,
+        "error": 0.0
+      },
+      {
+        "iteration": 9,
+        "value": -2540.09455717361,
+        "error": 0.0
+      },
+      {
+        "iteration": 10,
+        "value": -2540.107943561822,
+        "error": 0.0
+      },
+      {
+        "iteration": 11,
+        "value": -2540.1082401198123,
+        "error": 0.0
+      },
+      {
+        "iteration": 12,
+        "value": -2540.10832083189,
+        "error": 0.0
+      },
+      {
+        "iteration": 13,
+        "value": -2540.10835273727,
+        "error": 0.0
+      },
+      {
+        "iteration": 14,
+        "value": -2540.1083743094596,
+        "error": 0.0
+      },
+      {
+        "iteration": 15,
+        "value": -2540.10839514165,
+        "error": 0.0
+      },
+      {
+        "iteration": 16,
+        "value": -2540.1083983991216,
+        "error": 0.0
+      },
+      {
+        "iteration": 17,
+        "value": -2540.1084088266675,
+        "error": 0.0
+      },
+      {
+        "iteration": 18,
+        "value": -2540.108420635568,
+        "error": 0.0
+      },
+      {
+        "iteration": 19,
+        "value": -2540.10843137279,
+        "error": 0.0
+      },
+      {
+        "iteration": 20,
+        "value": -2540.1084577591064,
+        "error": 0.0
+      },
+      {
+        "iteration": 21,
+        "value": -2540.109243000006,
+        "error": 0.0
+      }
+    ],
+    [
+      {
+        "iteration": 0,
+        "value": -2441.9186437825847,
+        "error": 0.0
+      },
+      {
+        "iteration": 1,
+        "value": -2441.929502247791,
+        "error": 0.0
+      },
+      {
+        "iteration": 2,
+        "value": -2441.9447362588967,
+        "error": 0.0
+      },
+      {
+        "iteration": 3,
+        "value": -2441.965162008477,
+        "error": 0.0
+      },
+      {
+        "iteration": 4,
+        "value": -2441.974106140484,
+        "error": 0.0
+      },
+      {
+        "iteration": 5,
+        "value": -2441.9866912358984,
+        "error": 0.0
+      },
+      {
+        "iteration": 6,
+        "value": -2441.9892823052387,
+        "error": 0.0
+      },
+      {
+        "iteration": 7,
+        "value": -2441.9898129329417,
+        "error": 0.0
+      },
+      {
+        "iteration": 8,
+        "value": -2441.990129619743,
+        "error": 0.0
+      },
+      {
+        "iteration": 9,
+        "value": -2441.9903094402825,
+        "error": 0.0
+      },
+      {
+        "iteration": 10,
+        "value": -2442.0035599549096,
+        "error": 0.0
+      },
+      {
+        "iteration": 11,
+        "value": -2442.003848197998,
+        "error": 0.0
+      },
+      {
+        "iteration": 12,
+        "value": -2442.0039295167894,
+        "error": 0.0
+      },
+      {
+        "iteration": 13,
+        "value": -2442.003961215643,
+        "error": 0.0
+      },
+      {
+        "iteration": 14,
+        "value": -2442.0039829532784,
+        "error": 0.0
+      },
+      {
+        "iteration": 15,
+        "value": -2442.0040036332443,
+        "error": 0.0
+      },
+      {
+        "iteration": 16,
+        "value": -2442.0040071358103,
+        "error": 0.0
+      },
+      {
+        "iteration": 17,
+        "value": -2442.0040176628318,
+        "error": 0.0
+      },
+      {
+        "iteration": 18,
+        "value": -2442.0040295221975,
+        "error": 0.0
+      },
+      {
+        "iteration": 19,
+        "value": -2442.004040401238,
+        "error": 0.0
+      },
+      {
+        "iteration": 20,
+        "value": -2442.004065652696,
+        "error": 0.0
+      },
+      {
+        "iteration": 21,
+        "value": -2442.004857135209,
+        "error": 0.0
+      }
+    ]
+  ]
+}
