@@ -3,3 +3,6 @@
 output
 *.txt
 results
+!pi-stacking-tutorial/output/
+pi-stacking-tutorial/output/*
+!pi-stacking-tutorial/output/persister_data
